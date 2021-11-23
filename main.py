@@ -16,14 +16,22 @@ def report():
   word = request.args.get('word')
   if word:
     word = word.lower()
-    fromDb = db.get(word)
-    if fromDb:
-      jobs = fromDb
+    existingJobs = db.get(word)
+    if existingJobs:
+      jobs = existingJobs
     else:
       jobs = get_jobs(word)
       db[word] = jobs
   else:
     return redirect("/")
-  return render_template("report.html", searchingBy=word, resultNumber=len(jobs))
+  return render_template(
+    "report.html",
+    searchingBy=word,
+    resultNumber=len(jobs),
+    jobs=jobs
+  )
 
 app.run(host="0.0.0.0")
+
+
+#https://studiomeal.com/archives/533 -> 그리드 잘 정리된 듯
