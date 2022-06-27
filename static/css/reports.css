@@ -1,0 +1,53 @@
+.each-page {
+  display: flex;
+  justify-content: space-around;
+}
+
+.each-page__button {
+  background-color: #bacacf;
+  width: 130px;
+  height: 30px;
+  border-radius: 12px;
+  border: none;
+  color: white;
+}
+
+.a-button {
+  margin: 3px;
+  background-color: #bacacf;
+  width: 140px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+}
+
+.report__main {
+  margin: 0 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.report__buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.apply-link {
+  background-color: #bacacf;
+  width: 70px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  color: white;
+}
+
+.horizon {
+  margin: 20px 0;
+  height: 1px;
+  width: 100%;
+  background-color: black;
+}

@@ -1,0 +1,36 @@
+#home-main {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#home-main form {
+  display: flex;
+  flex-direction: column;
+}
+
+#home-main input:first-child {
+  background-color: #deeaee;
+  margin: 5px 10px;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+#home-main input:last-child {
+  margin-top: 10px;
+  height: 30px;
+  background-color: #bacacf;
+  border: none;
+  border-radius: 10px;
+}
+
+#home-main input:first-child::placeholder {
+  text-align: center;
+}
+
+.home-main__subtitle {
+  font-size: 12px;
+  opacity: 0.6;
+}

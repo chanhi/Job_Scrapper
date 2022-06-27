@@ -7,7 +7,7 @@
   <body>
     <div class="report__main">
       <div class="report__title">
-        <h2>Search Result</h2>
+        <h2>Search Result of stackoverflow.com</h2>
         <h3>Found {{resultNumber}} result for: {{searchingBy}}</h3>
       </div>
       <div class="report__buttons">
@@ -17,22 +17,10 @@
         <a href="/">
           <input class="a-button" type="submit" value="Go Home" />  
         </a>
+        <a href="/report?word={{searchingBy}}">
+          <input class="a-button" type="submit" value="Go Back" />  
+        </a>
       </div>
-    </div>
-   <div class="horizon"></div>
-    <div class="each-page">
-        <a href="/indeed?word={{searchingBy}}">
-          <button class="each-page__button">indeed</button>
-        </a>
-        <a href="/remoteok?word={{searchingBy}}">
-          <button class="each-page__button">RemoteOK</button>
-        </a>
-        <a href="/stackoverflow?word={{searchingBy}}">
-          <button class="each-page__button">StackOverflow</button>
-        </a>
-        <a href="/wwr?word={{searchingBy}}">
-          <button class="each-page__button">WeWorkRemotely</button>
-        </a>
     </div>
     <div class="horizon"></div>
     <section>

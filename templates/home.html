@@ -2,12 +2,19 @@
 <html>
   <head>
     <title>Job Search</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
   </head>
   <body>
-    <h2>Job Search</h2>
-    <form action="/report" method="get">
-      <input placeholder="Search for a job" required name="word" />
-      <button>Search</button>
-    </form>
+    <div id="home-main">
+      <h2>Job Search</h2>
+      <h4 class="home-main__subtitle">
+        from. indeed.com / remoteok.com / stackoverflow.com / weworkremotely.com
+      </h4>
+      <form action="/report" method="get">
+        <input placeholder="Search for a job" required name="word" />
+        <input type="submit" value="Search" />
+      </form>
+      
+    </div>
   </body>
 </html>
